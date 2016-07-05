@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,IAAK;EACD,KAAK,EAAE,IAAI;;AAEf,IAAK;EACD,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,MAAM;;AAId,cAAO;EACH,MAAM,EAAE,iBAAiB",
+"sources": ["sass/main.scss"],
+"names": [],
+"file": "dicegame.css"
+}

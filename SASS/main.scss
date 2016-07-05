@@ -1,6 +1,16 @@
 @import "variables";
 @import "mixins-functions";
 
+body {
+    width: 100%;
+}
 main {
-    border: 20px solid #000000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section {
+    #dice1 {
+        border: 2px solid #000000;
+    }
 }
