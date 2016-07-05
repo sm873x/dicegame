@@ -12,7 +12,6 @@ var diceGame = {
             document.getElementById('gameStatus').innerHTML = 'Winner!';
             var finish = new Date();
             document.getElementById('finalRoundAndTime').innerHTML = 'It took you ' + (diceGame.rounds.length + 1) + ' times and in ' + ( ( finish.getTime() - diceGame.timeStamp.getTime() )/1000 ) + ' seconds';
-
         } else {
             document.getElementById('gameStatus').innerHTML = 'Try Again!';
         }
