@@ -10,7 +10,9 @@ var diceGame = {
 
         if ( (dice1 + dice2) === 7 || (dice1 + dice2) === 11 ) {
             document.getElementById('gameStatus').innerHTML = 'Winner!';
-            document.getElementById('finalRoundAndTime').innerHTML = 'It took you ' + diceGame.rounds.length + ' times' + ;
+            var finish = new Date();
+            document.getElementById('finalRoundAndTime').innerHTML = 'It took you ' + (diceGame.rounds.length + 1) + ' times and in ' + ( ( finish.getTime() - diceGame.timeStamp.getTime() )/1000 ) + ' seconds';
+
         } else {
             document.getElementById('gameStatus').innerHTML = 'Try Again!';
         }
@@ -20,14 +22,8 @@ var diceGame = {
     }
 };
 
-
-
-
-
-
-
 //ROLL DICE
 document.getElementById('roll').addEventListener('click', diceGame.rollDice);
 
 //TIME STAMP
-document.getElementById('gameTimeStamp').innerHTML = diceGame.timeStamp;
+document.getElementById('gameTimeStamp').innerHTML = "Game began on " + diceGame.timeStamp;
