@@ -17,7 +17,7 @@ var diceGame = {
     }
 };
 
-diceGame.rollDice();
+document.getElementById('roll').addEventListener('click', diceGame.rollDice);
 
 console.log( diceGame.timeStamp );
 
