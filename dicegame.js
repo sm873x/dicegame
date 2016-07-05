@@ -10,19 +10,24 @@ var diceGame = {
 
         if ( (dice1 + dice2) === 7 || (dice1 + dice2) === 11 ) {
             document.getElementById('gameStatus').innerHTML = 'Winner!';
+            document.getElementById('finalRoundAndTime').innerHTML = 'It took you ' + diceGame.rounds.length + ' times' + ;
         } else {
             document.getElementById('gameStatus').innerHTML = 'Try Again!';
         }
 
+        diceGame.rounds.push(dice1 + dice2);
+        console.log(diceGame.rounds);
     }
 };
 
+
+
+
+
+
+
+//ROLL DICE
 document.getElementById('roll').addEventListener('click', diceGame.rollDice);
-
-console.log( diceGame.timeStamp );
-
-
-
 
 //TIME STAMP
 document.getElementById('gameTimeStamp').innerHTML = diceGame.timeStamp;
